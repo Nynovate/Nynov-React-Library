@@ -1,14 +1,9 @@
+import { useRoutes } from 'react-router-dom';
 import './index.css';
+import { routes } from './router/routes';
 
 function App() {
-	return (
-		<>
-			<div
-				className='bg-red-500'
-			>
-			</div>
-		</>
-	)
+	return useRoutes(routes);
 }
 
 export default App
